@@ -37,12 +37,48 @@
     "badge": "Lo que hacemos",
     "headline": "Servicios que ofrecemos",
     "items": [
-      { "icon": "🌐", "title": "Desarrollo Web", "description": "Aplicaciones web full-stack con frameworks modernos como React, Next.js y Node.js." },
-      { "icon": "📱", "title": "Apps Móviles", "description": "Aplicaciones móviles multiplataforma con React Native para iOS y Android." },
-      { "icon": "☁️", "title": "Cloud & DevOps", "description": "Infraestructura escalable en AWS, pipelines CI/CD y despliegues en contenedores." },
-      { "icon": "🎨", "title": "Diseño UI/UX", "description": "Interfaces limpias y accesibles que los usuarios aman — desde wireframes hasta código pixel-perfect." },
-      { "icon": "🔗", "title": "APIs e Integraciones", "description": "APIs REST y GraphQL, integraciones con terceros y arquitectura de microservicios." },
-      { "icon": "🛡️", "title": "Consultoría", "description": "Auditorías técnicas, revisiones de arquitectura y orientación práctica para tu equipo." }
+      {
+        "icon": "🌐",
+        "title": "Desarrollo Web",
+        "description": "Aplicaciones web full-stack con frameworks modernos como React, Next.js y Node.js.",
+        "details": "Diseñamos y construimos aplicaciones web rápidas y escalables desde cero. Nuestro stack incluye React, Next.js, TypeScript, Node.js y PostgreSQL. Cubrimos todo, desde la arquitectura y el diseño de APIs hasta el despliegue y la optimización de rendimiento, entregando productos listos para producción que son fáciles de mantener y escalar.",
+        "bullets": ["React / Next.js / TypeScript", "APIs REST y GraphQL", "PostgreSQL, MongoDB, Redis", "CI/CD y despliegue en la nube", "Optimización de rendimiento y SEO"]
+      },
+      {
+        "icon": "📱",
+        "title": "Apps Móviles",
+        "description": "Aplicaciones móviles multiplataforma con React Native para iOS y Android.",
+        "details": "Construimos apps móviles de calidad nativa con React Native, compartiendo código entre iOS y Android mientras ofrecemos una experiencia fluida y adaptada a cada plataforma. Desde notificaciones push y soporte offline hasta la publicación en las tiendas de aplicaciones, gestionamos el ciclo de vida completo.",
+        "bullets": ["React Native (iOS y Android)", "Expo y bare workflow", "Notificaciones push y deep linking", "Arquitectura offline-first", "Publicación en App Store y Play Store"]
+      },
+      {
+        "icon": "☁️",
+        "title": "Cloud & DevOps",
+        "description": "Infraestructura escalable en AWS, pipelines CI/CD y despliegues en contenedores.",
+        "details": "Diseñamos y gestionamos infraestructura en la nube que crece con tu producto. Desde configurar entornos en AWS y contenerizar servicios con Docker hasta construir pipelines CI/CD automatizados, nos aseguramos de que tus despliegues sean confiables, repetibles y seguros.",
+        "bullets": ["AWS (EC2, ECS, Lambda, S3, RDS)", "Docker y Kubernetes", "GitHub Actions / GitLab CI", "Infraestructura como código (Terraform)", "Monitoreo y alertas (CloudWatch, Datadog)"]
+      },
+      {
+        "icon": "🎨",
+        "title": "Diseño UI/UX",
+        "description": "Interfaces limpias y accesibles que los usuarios aman — desde wireframes hasta código pixel-perfect.",
+        "details": "El buen diseño es más que estética — es claridad, velocidad y accesibilidad. Creamos interfaces basadas en investigación de usuarios y principios de usabilidad, y las implementamos con precisión pixel-perfect. Cada componente se construye teniendo en cuenta la accesibilidad (WCAG).",
+        "bullets": ["Investigación de usuarios y wireframing", "Prototipos en Figma y sistemas de diseño", "Layouts responsivos y mobile-first", "Cumplimiento de accesibilidad WCAG", "Entrega de diseño a código"]
+      },
+      {
+        "icon": "🔗",
+        "title": "APIs e Integraciones",
+        "description": "APIs REST y GraphQL, integraciones con terceros y arquitectura de microservicios.",
+        "details": "Construimos APIs robustas que potencian tu producto y conectan tus sistemas. Ya sea que necesites un backend nuevo desde cero, una capa GraphQL sobre datos existentes, o integraciones con servicios de terceros como Stripe, Twilio o Salesforce, entregamos soluciones limpias y bien documentadas.",
+        "bullets": ["Diseño de APIs REST y GraphQL", "Integraciones con terceros (Stripe, Twilio, etc.)", "Microservicios y arquitectura orientada a eventos", "Documentación de APIs (OpenAPI / Swagger)", "Webhooks y tiempo real con WebSockets"]
+      },
+      {
+        "icon": "🛡️",
+        "title": "Consultoría",
+        "description": "Auditorías técnicas, revisiones de arquitectura y orientación práctica para tu equipo.",
+        "details": "A veces necesitas una perspectiva externa experimentada. Ofrecemos auditorías técnicas, revisiones de arquitectura y mentoría práctica para equipos de ingeniería. Ya sea que estés escalando un sistema legado, evaluando una nueva tecnología o preparándote para una ronda de financiamiento, te ayudamos a tomar las decisiones correctas.",
+        "bullets": ["Revisiones de arquitectura técnica", "Auditorías de código y seguridad", "Mentoría y capacitación de equipos", "Selección de tecnología y hoja de ruta", "Due diligence para inversores"]
+      }
     ]
   },
   "projects": {
@@ -50,12 +86,12 @@
     "headline": "Proyectos destacados",
     "description": "Una selección de productos que hemos diseñado, construido y lanzado.",
     "items": [
-      { "title": "Plataforma E-commerce", "description": "Tienda en línea completa con inventario en tiempo real, pagos con Stripe y panel de administración.", "tags": ["Next.js", "TypeScript", "Stripe", "PostgreSQL"] },
-      { "title": "Dashboard de Analíticas SaaS", "description": "Plataforma de analíticas multi-tenant con gráficas en vivo, control de acceso por roles y exportación CSV.", "tags": ["React", "Node.js", "AWS", "Chart.js"] },
-      { "title": "App de Entregas Móvil", "description": "App React Native para entregas de última milla con rastreo GPS en tiempo real y notificaciones push.", "tags": ["React Native", "Firebase", "Google Maps"] },
-      { "title": "Portal de Salud", "description": "Sistema de gestión de pacientes con agendamiento de citas, expedientes médicos y cumplimiento HIPAA.", "tags": ["React", "Node.js", "MongoDB", "AWS"] },
-      { "title": "Marketplace Inmobiliario", "description": "Plataforma de listado de propiedades con filtros avanzados, tours virtuales y CRM para agentes.", "tags": ["Next.js", "Prisma", "Mapbox", "Vercel"] },
-      { "title": "Herramienta DevOps Interna", "description": "Gestor de pipelines CI/CD con logs de despliegue, soporte de rollback y notificaciones en Slack.", "tags": ["React", "Docker", "GitHub Actions", "AWS"] }
+      { "title": "Plataforma E-commerce", "description": "Tienda en línea completa con inventario en tiempo real, pagos con Stripe y panel de administración.", "tags": ["Next.js", "TypeScript", "Stripe", "PostgreSQL"], "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80" },
+      { "title": "Dashboard de Analíticas SaaS", "description": "Plataforma de analíticas multi-tenant con gráficas en vivo, control de acceso por roles y exportación CSV.", "tags": ["React", "Node.js", "AWS", "Chart.js"], "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80" },
+      { "title": "App de Entregas Móvil", "description": "App React Native para entregas de última milla con rastreo GPS en tiempo real y notificaciones push.", "tags": ["React Native", "Firebase", "Google Maps"], "image": "https://images.unsplash.com/photo-1526367790999-0150786686a2?w=600&q=80" },
+      { "title": "Portal de Salud", "description": "Sistema de gestión de pacientes con agendamiento de citas, expedientes médicos y cumplimiento HIPAA.", "tags": ["React", "Node.js", "MongoDB", "AWS"], "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=80" },
+      { "title": "Marketplace Inmobiliario", "description": "Plataforma de listado de propiedades con filtros avanzados, tours virtuales y CRM para agentes.", "tags": ["Next.js", "Prisma", "Mapbox", "Vercel"], "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80" },
+      { "title": "Herramienta DevOps Interna", "description": "Gestor de pipelines CI/CD con logs de despliegue, soporte de rollback y notificaciones en Slack.", "tags": ["React", "Docker", "GitHub Actions", "AWS"], "image": "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=600&q=80" }
     ]
   },
   "testimonials": {
