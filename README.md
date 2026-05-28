@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# mhsoftware Portfolio
+
+Personal portfolio website for **mhsoftware** — a software development studio. Built with Next.js, TypeScript, and Tailwind CSS.
+
+## Tech Stack
+
+- **Framework:** Next.js 16 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS v4
+- **i18n:** Custom implementation with `app/[lang]/` routing and `Accept-Language` auto-detection
+
+## Features
+
+- Bilingual (English 🇺🇸 / Spanish 🇪🇸) with automatic language detection from browser settings
+- Default language: Spanish
+- Language switcher in the navbar
+- Sections: Hero, About, Services (with detail modals), Projects (with images), Testimonials, Contact
+- Fully static — pre-rendered at build time via `generateStaticParams`
+- Responsive design with mobile navigation
+
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── [lang]/
+│   │   ├── layout.tsx       # Per-locale layout (loads dictionary, renders Navbar/Footer)
+│   │   └── page.tsx         # Main page (assembles all sections)
+│   ├── layout.tsx           # Root passthrough layout
+│   └── globals.css
+├── components/
+│   ├── Navbar.tsx
+│   ├── Hero.tsx
+│   ├── AboutServices.tsx    # About + Services sections with modal trigger
+│   ├── ServiceModal.tsx     # Service detail modal
+│   ├── Projects.tsx
+│   ├── Testimonials.tsx
+│   ├── Contact.tsx
+│   └── Footer.tsx
+├── dictionaries/
+│   ├── en.json              # English content
+│   └── es.json              # Spanish content
+├── i18n/
+│   └── dictionaries.ts      # getDictionary helper, Locale type
+└── proxy.ts                 # Middleware: detects locale from Accept-Language, redirects /→/es or /en
+```
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) — you'll be redirected to `/es` or `/en` based on your browser language.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Available Routes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Route | Description |
+|-------|-------------|
+| `/`   | Redirected by middleware to `/es` or `/en` |
+| `/es` | Spanish version |
+| `/en` | English version |
 
-## Learn More
+## Adding a New Language
 
-To learn more about Next.js, take a look at the following resources:
+1. Add a new dictionary file in `src/dictionaries/<locale>.json` (copy `en.json` as a template)
+2. Register the locale in `src/i18n/dictionaries.ts`
+3. The middleware and static generation will pick it up automatically
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Deploy to [Vercel](https://vercel.com) with zero configuration — just connect the repository.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run build   # production build
+npm start       # start production server
+```
