@@ -1,4 +1,10 @@
+"use client";
+
+import { useState } from "react";
 import type en from "@/dictionaries/en.json";
+import ServiceModal from "./ServiceModal";
+
+type ServiceItem = typeof en.services.items[number];
 
 type Props = {
   aboutDict: typeof en.about;
@@ -6,6 +12,8 @@ type Props = {
 };
 
 export default function AboutServices({ aboutDict, servicesDict }: Props) {
+  const [selected, setSelected] = useState<ServiceItem | null>(null);
+
   return (
     <>
       <section id="about" className="py-24 bg-white">
@@ -41,18 +49,26 @@ export default function AboutServices({ aboutDict, servicesDict }: Props) {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {servicesDict.items.map((s) => (
-              <div
+              <button
                 key={s.title}
-                className="bg-white rounded-2xl p-7 border border-gray-200 hover:shadow-md transition-shadow"
+                onClick={() => setSelected(s)}
+                className="text-left bg-white rounded-2xl p-7 border border-gray-200 hover:shadow-md hover:border-gray-300 transition-all cursor-pointer group"
               >
                 <span className="text-3xl">{s.icon}</span>
                 <h3 className="text-lg font-semibold text-gray-900 mt-4 mb-2">{s.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{s.description}</p>
-              </div>
+                <span className="inline-block mt-4 text-xs text-gray-400 group-hover:text-gray-600 transition-colors">
+                  Learn more →
+                </span>
+              </button>
             ))}
           </div>
         </div>
       </section>
+
+      {selected && (
+        <ServiceModal service={selected} onClose={() => setSelected(null)} />
+      )}
     </>
   );
 }

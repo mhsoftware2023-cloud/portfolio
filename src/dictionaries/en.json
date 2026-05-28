@@ -37,12 +37,48 @@
     "badge": "What we do",
     "headline": "Services we offer",
     "items": [
-      { "icon": "🌐", "title": "Web Development", "description": "Full-stack web apps built with modern frameworks like React, Next.js, and Node.js." },
-      { "icon": "📱", "title": "Mobile Apps", "description": "Cross-platform mobile applications using React Native for iOS and Android." },
-      { "icon": "☁️", "title": "Cloud & DevOps", "description": "Scalable infrastructure on AWS, CI/CD pipelines, and containerized deployments." },
-      { "icon": "🎨", "title": "UI/UX Design", "description": "Clean, accessible interfaces that users love — from wireframes to pixel-perfect code." },
-      { "icon": "🔗", "title": "API & Integrations", "description": "RESTful and GraphQL APIs, third-party integrations, and microservices architecture." },
-      { "icon": "🛡️", "title": "Consulting", "description": "Technical audits, architecture reviews, and hands-on guidance for your team." }
+      {
+        "icon": "🌐",
+        "title": "Web Development",
+        "description": "Full-stack web apps built with modern frameworks like React, Next.js, and Node.js.",
+        "details": "We design and build fast, scalable web applications from the ground up. Our stack includes React, Next.js, TypeScript, Node.js, and PostgreSQL. We cover everything from architecture and API design to deployment and performance optimization — delivering production-ready products that are easy to maintain and grow.",
+        "bullets": ["React / Next.js / TypeScript", "REST & GraphQL APIs", "PostgreSQL, MongoDB, Redis", "CI/CD & cloud deployment", "Performance & SEO optimization"]
+      },
+      {
+        "icon": "📱",
+        "title": "Mobile Apps",
+        "description": "Cross-platform mobile applications using React Native for iOS and Android.",
+        "details": "We build native-quality mobile apps with React Native, sharing code across iOS and Android while delivering a smooth, platform-appropriate experience. From push notifications and offline support to app store submission, we handle the full lifecycle.",
+        "bullets": ["React Native (iOS & Android)", "Expo & bare workflow", "Push notifications & deep linking", "Offline-first architecture", "App Store & Play Store submission"]
+      },
+      {
+        "icon": "☁️",
+        "title": "Cloud & DevOps",
+        "description": "Scalable infrastructure on AWS, CI/CD pipelines, and containerized deployments.",
+        "details": "We design and manage cloud infrastructure that scales with your product. From setting up AWS environments and containerizing services with Docker to building automated CI/CD pipelines, we make sure your deployments are reliable, repeatable, and secure.",
+        "bullets": ["AWS (EC2, ECS, Lambda, S3, RDS)", "Docker & Kubernetes", "GitHub Actions / GitLab CI", "Infrastructure as Code (Terraform)", "Monitoring & alerting (CloudWatch, Datadog)"]
+      },
+      {
+        "icon": "🎨",
+        "title": "UI/UX Design",
+        "description": "Clean, accessible interfaces that users love — from wireframes to pixel-perfect code.",
+        "details": "Good design is more than aesthetics — it's clarity, speed, and accessibility. We create interfaces grounded in user research and usability principles, then implement them with pixel-perfect precision. Every component is built with accessibility (WCAG) in mind.",
+        "bullets": ["User research & wireframing", "Figma prototypes & design systems", "Responsive & mobile-first layouts", "WCAG accessibility compliance", "Design-to-code handoff"]
+      },
+      {
+        "icon": "🔗",
+        "title": "API & Integrations",
+        "description": "RESTful and GraphQL APIs, third-party integrations, and microservices architecture.",
+        "details": "We build robust APIs that power your product and connect your systems. Whether you need a new backend from scratch, a GraphQL layer over existing data, or integrations with third-party services like Stripe, Twilio, or Salesforce, we deliver clean, well-documented solutions.",
+        "bullets": ["RESTful & GraphQL API design", "Third-party integrations (Stripe, Twilio, etc.)", "Microservices & event-driven architecture", "API documentation (OpenAPI / Swagger)", "Webhooks & real-time with WebSockets"]
+      },
+      {
+        "icon": "🛡️",
+        "title": "Consulting",
+        "description": "Technical audits, architecture reviews, and hands-on guidance for your team.",
+        "details": "Sometimes you need an experienced outside perspective. We offer technical audits, architecture reviews, and hands-on mentoring for engineering teams. Whether you're scaling a legacy system, evaluating a new technology, or preparing for a funding round, we help you make the right calls.",
+        "bullets": ["Technical architecture reviews", "Code & security audits", "Team mentoring & training", "Technology selection & roadmapping", "Due diligence for investors"]
+      }
     ]
   },
   "projects": {
@@ -50,12 +86,12 @@
     "headline": "Featured projects",
     "description": "A selection of products we've designed, built, and shipped.",
     "items": [
-      { "title": "E-commerce Platform", "description": "A full-featured online store with real-time inventory, Stripe payments, and an admin dashboard.", "tags": ["Next.js", "TypeScript", "Stripe", "PostgreSQL"] },
-      { "title": "SaaS Analytics Dashboard", "description": "Multi-tenant analytics platform with live charts, role-based access, and CSV exports.", "tags": ["React", "Node.js", "AWS", "Chart.js"] },
-      { "title": "Mobile Delivery App", "description": "React Native app for last-mile delivery with real-time GPS tracking and push notifications.", "tags": ["React Native", "Firebase", "Google Maps"] },
-      { "title": "Healthcare Portal", "description": "Patient management system with appointment scheduling, medical records, and HIPAA compliance.", "tags": ["React", "Node.js", "MongoDB", "AWS"] },
-      { "title": "Real Estate Marketplace", "description": "Property listing platform with advanced search filters, virtual tours, and agent CRM.", "tags": ["Next.js", "Prisma", "Mapbox", "Vercel"] },
-      { "title": "Internal DevOps Tool", "description": "CI/CD pipeline manager with deployment logs, rollback support, and Slack notifications.", "tags": ["React", "Docker", "GitHub Actions", "AWS"] }
+      { "title": "E-commerce Platform", "description": "A full-featured online store with real-time inventory, Stripe payments, and an admin dashboard.", "tags": ["Next.js", "TypeScript", "Stripe", "PostgreSQL"], "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80" },
+      { "title": "SaaS Analytics Dashboard", "description": "Multi-tenant analytics platform with live charts, role-based access, and CSV exports.", "tags": ["React", "Node.js", "AWS", "Chart.js"], "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80" },
+      { "title": "Mobile Delivery App", "description": "React Native app for last-mile delivery with real-time GPS tracking and push notifications.", "tags": ["React Native", "Firebase", "Google Maps"], "image": "https://images.unsplash.com/photo-1526367790999-0150786686a2?w=600&q=80" },
+      { "title": "Healthcare Portal", "description": "Patient management system with appointment scheduling, medical records, and HIPAA compliance.", "tags": ["React", "Node.js", "MongoDB", "AWS"], "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=80" },
+      { "title": "Real Estate Marketplace", "description": "Property listing platform with advanced search filters, virtual tours, and agent CRM.", "tags": ["Next.js", "Prisma", "Mapbox", "Vercel"], "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80" },
+      { "title": "Internal DevOps Tool", "description": "CI/CD pipeline manager with deployment logs, rollback support, and Slack notifications.", "tags": ["React", "Docker", "GitHub Actions", "AWS"], "image": "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=600&q=80" }
     ]
   },
   "testimonials": {

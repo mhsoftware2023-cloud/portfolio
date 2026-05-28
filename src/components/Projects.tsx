@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type en from "@/dictionaries/en.json";
 
 type Props = { dict: typeof en.projects };
@@ -20,8 +21,14 @@ export default function Projects({ dict }: Props) {
               key={p.title}
               className="flex flex-col bg-gray-50 rounded-2xl border border-gray-100 overflow-hidden hover:shadow-md transition-shadow"
             >
-              <div className="h-40 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center text-gray-400 text-4xl">
-                💻
+              <div className="relative h-44 w-full">
+                <Image
+                  src={p.image}
+                  alt={p.title}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
               </div>
               <div className="p-6 flex flex-col flex-1">
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">{p.title}</h3>
