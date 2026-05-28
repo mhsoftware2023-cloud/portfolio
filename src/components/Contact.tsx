@@ -7,10 +7,37 @@ type Props = { dict: typeof en.contact };
 
 export default function Contact({ dict }: Props) {
   const [sent, setSent] = useState(false);
+  const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setSent(true);
+    setLoading(true);
+    setError(false);
+
+    const data = new FormData(e.currentTarget);
+
+    // Build a labeled object using the translated field labels as keys
+    // This makes the email self-describing regardless of which fields exist
+    const fields: Record<string, string> = {
+      [dict.form.name]: data.get("name") as string,
+      [dict.form.email]: data.get("email") as string,
+      [dict.form.subject]: data.get("subject") as string,
+      [dict.form.message]: data.get("message") as string,
+    };
+
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(fields),
+    });
+
+    setLoading(false);
+    if (res.ok) {
+      setSent(true);
+    } else {
+      setError(true);
+    }
   }
 
   return (
@@ -73,9 +100,12 @@ export default function Contact({ dict }: Props) {
                 <textarea id="message" name="message" required rows={5} placeholder={dict.form.messagePlaceholder}
                   className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-gray-400 resize-none" />
               </div>
-              <button type="submit"
-                className="w-full py-3 rounded-lg bg-white text-gray-900 font-medium hover:bg-gray-200 transition-colors">
-                {dict.form.submit}
+              {error && (
+                <p className="text-red-400 text-sm">Something went wrong. Please try again.</p>
+              )}
+              <button type="submit" disabled={loading}
+                className="w-full py-3 rounded-lg bg-white text-gray-900 font-medium hover:bg-gray-200 transition-colors disabled:opacity-50">
+                {loading ? "Sending…" : dict.form.submit}
               </button>
             </form>
           )}
