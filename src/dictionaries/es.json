@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "about": "Nosotros",
+    "services": "Servicios",
+    "projects": "Proyectos",
+    "testimonials": "Testimonios",
+    "contact": "Contacto",
+    "cta": "Contáctanos"
+  },
+  "hero": {
+    "badge": "Estudio de Desarrollo de Software",
+    "headline": "Construimos software que",
+    "headlineAccent": "crece contigo",
+    "description": "mhsoftware crea aplicaciones web y móviles modernas — desde la idea hasta producción. Código limpio, gran experiencia de usuario y entrega confiable.",
+    "ctaPrimary": "Ver nuestro trabajo",
+    "ctaSecondary": "Iniciar un proyecto",
+    "stats": [
+      { "value": "50+", "label": "Proyectos entregados" },
+      { "value": "30+", "label": "Clientes satisfechos" },
+      { "value": "5+", "label": "Años de experiencia" },
+      { "value": "100%", "label": "Satisfacción del cliente" }
+    ]
+  },
+  "about": {
+    "badge": "Nosotros",
+    "headline": "Un estudio pequeño con gran impacto",
+    "p1": "mhsoftware es un estudio de software independiente enfocado en construir productos digitales de alta calidad. Trabajamos de cerca con startups, empresas en crecimiento y negocios establecidos para convertir ideas en software confiable.",
+    "p2": "Creemos que el gran software nace de la comunicación clara, la ingeniería sólida y el cuidado genuino por el usuario final. Sin relleno, sin atajos — solo trabajo que perdura.",
+    "cards": [
+      { "label": "Tecnologías", "value": "React, Node, AWS y más" },
+      { "label": "Enfoque", "value": "Ágil, iterativo, transparente" },
+      { "label": "Equipo", "value": "Ingenieros y diseñadores senior" },
+      { "label": "Disponibilidad", "value": "Abiertos a nuevos proyectos" }
+    ]
+  },
+  "services": {
+    "badge": "Lo que hacemos",
+    "headline": "Servicios que ofrecemos",
+    "items": [
+      { "icon": "🌐", "title": "Desarrollo Web", "description": "Aplicaciones web full-stack con frameworks modernos como React, Next.js y Node.js." },
+      { "icon": "📱", "title": "Apps Móviles", "description": "Aplicaciones móviles multiplataforma con React Native para iOS y Android." },
+      { "icon": "☁️", "title": "Cloud & DevOps", "description": "Infraestructura escalable en AWS, pipelines CI/CD y despliegues en contenedores." },
+      { "icon": "🎨", "title": "Diseño UI/UX", "description": "Interfaces limpias y accesibles que los usuarios aman — desde wireframes hasta código pixel-perfect." },
+      { "icon": "🔗", "title": "APIs e Integraciones", "description": "APIs REST y GraphQL, integraciones con terceros y arquitectura de microservicios." },
+      { "icon": "🛡️", "title": "Consultoría", "description": "Auditorías técnicas, revisiones de arquitectura y orientación práctica para tu equipo." }
+    ]
+  },
+  "projects": {
+    "badge": "Nuestro trabajo",
+    "headline": "Proyectos destacados",
+    "description": "Una selección de productos que hemos diseñado, construido y lanzado.",
+    "items": [
+      { "title": "Plataforma E-commerce", "description": "Tienda en línea completa con inventario en tiempo real, pagos con Stripe y panel de administración.", "tags": ["Next.js", "TypeScript", "Stripe", "PostgreSQL"] },
+      { "title": "Dashboard de Analíticas SaaS", "description": "Plataforma de analíticas multi-tenant con gráficas en vivo, control de acceso por roles y exportación CSV.", "tags": ["React", "Node.js", "AWS", "Chart.js"] },
+      { "title": "App de Entregas Móvil", "description": "App React Native para entregas de última milla con rastreo GPS en tiempo real y notificaciones push.", "tags": ["React Native", "Firebase", "Google Maps"] },
+      { "title": "Portal de Salud", "description": "Sistema de gestión de pacientes con agendamiento de citas, expedientes médicos y cumplimiento HIPAA.", "tags": ["React", "Node.js", "MongoDB", "AWS"] },
+      { "title": "Marketplace Inmobiliario", "description": "Plataforma de listado de propiedades con filtros avanzados, tours virtuales y CRM para agentes.", "tags": ["Next.js", "Prisma", "Mapbox", "Vercel"] },
+      { "title": "Herramienta DevOps Interna", "description": "Gestor de pipelines CI/CD con logs de despliegue, soporte de rollback y notificaciones en Slack.", "tags": ["React", "Docker", "GitHub Actions", "AWS"] }
+    ]
+  },
+  "testimonials": {
+    "badge": "Historias de clientes",
+    "headline": "Lo que dicen nuestros clientes",
+    "items": [
+      { "name": "Sarah Mitchell", "role": "CEO, LaunchPad Ventures", "quote": "mhsoftware entregó nuestro MVP en tiempo récord sin recortar esquinas. La calidad del código fue excepcional y el equipo fue un placer con quien trabajar.", "avatar": "SM" },
+      { "name": "Carlos Rivera", "role": "CTO, HealthTrack", "quote": "Tomaron nuestros requisitos complejos y los convirtieron en un sistema limpio y escalable. La comunicación fue transparente durante todo el proyecto.", "avatar": "CR" },
+      { "name": "Emily Chen", "role": "Fundadora, ShopLocal", "quote": "Nuestra plataforma de e-commerce pasó de concepto a lanzamiento en 8 semanas. Las ventas se duplicaron en el primer mes. No podríamos estar más contentos.", "avatar": "EC" }
+    ]
+  },
+  "contact": {
+    "badge": "Contáctanos",
+    "headline": "Construyamos algo juntos",
+    "description": "¿Tienes un proyecto en mente? Nos encantaría escucharlo. Envíanos un mensaje y te responderemos en menos de 24 horas.",
+    "email": "hello@mhsoftware.dev",
+    "location": "Remoto — disponible en todo el mundo",
+    "form": {
+      "name": "Nombre",
+      "namePlaceholder": "Juan Pérez",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "juan@ejemplo.com",
+      "subject": "Asunto",
+      "subjectPlaceholder": "Consulta de proyecto",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntanos sobre tu proyecto...",
+      "submit": "Enviar mensaje"
+    },
+    "successTitle": "¡Mensaje enviado!",
+    "successBody": "Nos pondremos en contacto pronto."
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados."
+  }
+}
