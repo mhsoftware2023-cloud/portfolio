@@ -51,11 +51,16 @@ export default function Contact({ dict }: Props) {
           <p className="text-gray-400 text-lg mb-8">{dict.description}</p>
           <ul className="space-y-4 text-gray-400 text-sm">
             <li className="flex items-center gap-3">
-              <span className="text-gray-300">✉</span>
+              <svg className="w-4 h-4 text-gray-300 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+              </svg>
               {dict.email}
             </li>
             <li className="flex items-center gap-3">
-              <span className="text-gray-300">📍</span>
+              <svg className="w-4 h-4 text-gray-300 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+              </svg>
               {dict.location}
             </li>
           </ul>
@@ -64,7 +69,11 @@ export default function Contact({ dict }: Props) {
         <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
           {sent ? (
             <div className="text-center py-8">
-              <p className="text-3xl mb-4">🎉</p>
+              <div className="mx-auto mb-4 w-14 h-14 rounded-full bg-white/10 flex items-center justify-center">
+                <svg className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
               <p className="text-xl font-semibold">{dict.successTitle}</p>
               <p className="text-gray-400 mt-2 text-sm">{dict.successBody}</p>
             </div>
