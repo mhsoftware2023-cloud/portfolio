@@ -22,7 +22,6 @@ export default function Navbar({ dict, lang }: Props) {
   // Swap /en/... ↔ /es/...
   const otherLang: Locale = lang === "es" ? "en" : "es";
   const switchHref = pathname.replace(`/${lang}`, `/${otherLang}`);
-  const flags: Record<Locale, string> = { en: "🇺🇸", es: "🇪🇸" };
 
   return (
     <header className="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur border-b border-gray-100">
@@ -45,8 +44,9 @@ export default function Navbar({ dict, lang }: Props) {
 
         <div className="hidden md:flex items-center gap-3">
           <a href={switchHref}
-            className="text-sm text-gray-500 hover:text-gray-900 font-medium transition-colors uppercase">
-            {flags[otherLang]} {otherLang}
+            className="flex items-center gap-1.5 text-sm text-gray-500 hover:text-gray-900 font-medium transition-colors uppercase">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={`/flag-${otherLang}.svg`} alt={otherLang} style={{ width: 20, height: "auto" }} className="rounded-sm" />{otherLang}
           </a>
           <a href="#contact"
             className="px-4 py-2 rounded-lg bg-gray-900 text-white text-sm font-medium hover:bg-gray-700 transition-colors">
@@ -72,8 +72,9 @@ export default function Navbar({ dict, lang }: Props) {
             </a>
           ))}
           <div className="flex items-center justify-between mt-2">
-            <a href={switchHref} className="text-sm text-gray-500 font-medium uppercase" onClick={() => setOpen(false)}>
-              {flags[otherLang]} {otherLang}
+            <a href={switchHref} className="flex items-center gap-1.5 text-sm text-gray-500 font-medium uppercase" onClick={() => setOpen(false)}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={`/flag-${otherLang}.svg`} alt={otherLang} style={{ width: 20, height: "auto" }} className="rounded-sm" />{otherLang}
             </a>
             <a href="#contact"
               className="px-4 py-2 rounded-lg bg-gray-900 text-white text-sm font-medium"

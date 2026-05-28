@@ -24,10 +24,7 @@ export default function ServiceModal({ service, onClose }: Props) {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-start justify-between mb-6">
-          <div className="flex items-center gap-4">
-            <span className="text-4xl">{service.icon}</span>
-            <h3 className="text-2xl font-bold text-gray-900">{service.title}</h3>
-          </div>
+          <h3 className="text-2xl font-bold text-gray-900">{service.title}</h3>
           <button
             onClick={onClose}
             className="text-gray-400 hover:text-gray-700 text-2xl leading-none"
