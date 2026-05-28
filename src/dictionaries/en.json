@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "testimonials": "Testimonials",
+    "contact": "Contact",
+    "cta": "Get in touch"
+  },
+  "hero": {
+    "badge": "Software Development Studio",
+    "headline": "We build software that",
+    "headlineAccent": "scales with you",
+    "description": "mhsoftware crafts modern web and mobile applications — from idea to production. Clean code, great UX, and reliable delivery.",
+    "ctaPrimary": "See our work",
+    "ctaSecondary": "Start a project",
+    "stats": [
+      { "value": "50+", "label": "Projects delivered" },
+      { "value": "30+", "label": "Happy clients" },
+      { "value": "5+", "label": "Years of experience" },
+      { "value": "100%", "label": "Client satisfaction" }
+    ]
+  },
+  "about": {
+    "badge": "About us",
+    "headline": "A small studio with a big impact",
+    "p1": "mhsoftware is an independent software studio focused on building high-quality digital products. We work closely with startups, scale-ups, and established businesses to turn ideas into reliable software.",
+    "p2": "We believe great software comes from clear communication, solid engineering, and a genuine care for the end user. No bloat, no shortcuts — just work that lasts.",
+    "cards": [
+      { "label": "Technologies", "value": "React, Node, AWS, and more" },
+      { "label": "Approach", "value": "Agile, iterative, transparent" },
+      { "label": "Team", "value": "Senior engineers & designers" },
+      { "label": "Availability", "value": "Open to new projects" }
+    ]
+  },
+  "services": {
+    "badge": "What we do",
+    "headline": "Services we offer",
+    "items": [
+      { "icon": "🌐", "title": "Web Development", "description": "Full-stack web apps built with modern frameworks like React, Next.js, and Node.js." },
+      { "icon": "📱", "title": "Mobile Apps", "description": "Cross-platform mobile applications using React Native for iOS and Android." },
+      { "icon": "☁️", "title": "Cloud & DevOps", "description": "Scalable infrastructure on AWS, CI/CD pipelines, and containerized deployments." },
+      { "icon": "🎨", "title": "UI/UX Design", "description": "Clean, accessible interfaces that users love — from wireframes to pixel-perfect code." },
+      { "icon": "🔗", "title": "API & Integrations", "description": "RESTful and GraphQL APIs, third-party integrations, and microservices architecture." },
+      { "icon": "🛡️", "title": "Consulting", "description": "Technical audits, architecture reviews, and hands-on guidance for your team." }
+    ]
+  },
+  "projects": {
+    "badge": "Our work",
+    "headline": "Featured projects",
+    "description": "A selection of products we've designed, built, and shipped.",
+    "items": [
+      { "title": "E-commerce Platform", "description": "A full-featured online store with real-time inventory, Stripe payments, and an admin dashboard.", "tags": ["Next.js", "TypeScript", "Stripe", "PostgreSQL"] },
+      { "title": "SaaS Analytics Dashboard", "description": "Multi-tenant analytics platform with live charts, role-based access, and CSV exports.", "tags": ["React", "Node.js", "AWS", "Chart.js"] },
+      { "title": "Mobile Delivery App", "description": "React Native app for last-mile delivery with real-time GPS tracking and push notifications.", "tags": ["React Native", "Firebase", "Google Maps"] },
+      { "title": "Healthcare Portal", "description": "Patient management system with appointment scheduling, medical records, and HIPAA compliance.", "tags": ["React", "Node.js", "MongoDB", "AWS"] },
+      { "title": "Real Estate Marketplace", "description": "Property listing platform with advanced search filters, virtual tours, and agent CRM.", "tags": ["Next.js", "Prisma", "Mapbox", "Vercel"] },
+      { "title": "Internal DevOps Tool", "description": "CI/CD pipeline manager with deployment logs, rollback support, and Slack notifications.", "tags": ["React", "Docker", "GitHub Actions", "AWS"] }
+    ]
+  },
+  "testimonials": {
+    "badge": "Client stories",
+    "headline": "What our clients say",
+    "items": [
+      { "name": "Sarah Mitchell", "role": "CEO, LaunchPad Ventures", "quote": "mhsoftware delivered our MVP in record time without cutting corners. The code quality was exceptional and the team was a pleasure to work with.", "avatar": "SM" },
+      { "name": "Carlos Rivera", "role": "CTO, HealthTrack", "quote": "They took our complex requirements and turned them into a clean, scalable system. Communication was transparent throughout the entire project.", "avatar": "CR" },
+      { "name": "Emily Chen", "role": "Founder, ShopLocal", "quote": "Our e-commerce platform went from concept to launch in 8 weeks. Sales doubled in the first month. Couldn't be happier with the result.", "avatar": "EC" }
+    ]
+  },
+  "contact": {
+    "badge": "Get in touch",
+    "headline": "Let's build something together",
+    "description": "Have a project in mind? We'd love to hear about it. Send us a message and we'll get back to you within 24 hours.",
+    "email": "hello@mhsoftware.dev",
+    "location": "Remote — available worldwide",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Jane Doe",
+      "email": "Email",
+      "emailPlaceholder": "jane@example.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "Project inquiry",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your project...",
+      "submit": "Send message"
+    },
+    "successTitle": "Message sent!",
+    "successBody": "We'll be in touch shortly."
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}
