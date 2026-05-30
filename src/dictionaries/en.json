@@ -15,10 +15,10 @@
     "ctaPrimary": "See our work",
     "ctaSecondary": "Start a project",
     "stats": [
-      { "value": "50+", "label": "Projects delivered" },
-      { "value": "30+", "label": "Happy clients" },
-      { "value": "5+", "label": "Years of experience" },
-      { "value": "100%", "label": "Client satisfaction" }
+      { "value": "7+", "label": "Years of experience" },
+      { "value": "10+", "label": "Technologies mastered" },
+      { "value": "Full-stack", "label": "End-to-end development" },
+      { "value": "∞", "label": "Passion for clean code" }
     ]
   },
   "about": {
@@ -98,16 +98,16 @@
     "badge": "Client stories",
     "headline": "What our clients say",
     "items": [
-      { "name": "Sarah Mitchell", "role": "CEO, LaunchPad Ventures", "quote": "mhsoftware delivered our MVP in record time without cutting corners. The code quality was exceptional and the team was a pleasure to work with.", "avatar": "SM" },
-      { "name": "Carlos Rivera", "role": "CTO, HealthTrack", "quote": "They took our complex requirements and turned them into a clean, scalable system. Communication was transparent throughout the entire project.", "avatar": "CR" },
-      { "name": "Emily Chen", "role": "Founder, ShopLocal", "quote": "Our e-commerce platform went from concept to launch in 8 weeks. Sales doubled in the first month. Couldn't be happier with the result.", "avatar": "EC" }
+      { "name": "Felipe Agudelo", "role": "CEO, El Taller 365", "quote": "Working with Mateo was a game changer for our business. He understood our needs from day one and delivered a robust, easy-to-use platform that our whole team adopted immediately. Professional, fast, and detail-oriented.", "avatar": "FA" },
+      { "name": "Manuel Henao", "role": "Huevos El Tesoro", "quote": "We needed a reliable system to manage our operations and Mateo built exactly that. Clean, stable, and tailored to how we actually work. He was always available to answer questions and make adjustments along the way.", "avatar": "MH" },
+      { "name": "Daniel Carvajal", "role": "Founder, DC Consulting", "quote": "Mateo brings both technical depth and clear communication — a rare combination. He translated complex business requirements into a scalable solution and delivered on time. I wouldn't hesitate to work with him again.", "avatar": "DC" }
     ]
   },
   "contact": {
     "badge": "Get in touch",
     "headline": "Let's build something together",
     "description": "Have a project in mind? We'd love to hear about it. Send us a message and we'll get back to you within 24 hours.",
-    "email": "hello@mhsoftware.dev",
+    "email": "mhsoftware2023@gmail.com",
     "location": "Remote — available worldwide",
     "form": {
       "name": "Name",
